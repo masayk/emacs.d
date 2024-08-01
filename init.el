@@ -90,7 +90,7 @@
 (add-to-list 'auto-mode-alist '("\\.txt$" . org-mode))
 
 ;; org-fold
-(load "~/.emacs.d/elisp/org-mode/org-fold.el")
+(load "~/.emacs.d/elisp/org-fold.el")
 
 
 ;;
