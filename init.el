@@ -51,6 +51,14 @@
 
 
 ;;
+;; Theme
+;;
+
+(require 'modus-themes)
+(load-theme 'modus-vivendi t)
+
+
+;;
 ;; Helm
 ;;
 
