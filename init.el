@@ -65,6 +65,7 @@
 ;;
 
 (use-package helm
+  :ensure t
   :init
   (setq helm-move-to-line-cycle-in-source nil)
   (setq helm-ff-file-name-history-use-recentf t)
@@ -108,6 +109,7 @@
 ;;
 
 (use-package sequential-command
+  :ensure t
   :init
   (require 'sequential-command-config)
   (sequential-command-setup-keys))
