@@ -54,8 +54,10 @@
 ;; Theme
 ;;
 
-(require 'modus-themes)
-(load-theme 'modus-vivendi t)
+(use-package modus-themes
+  :ensure t
+  :init
+  (load-theme 'modus-vivendi t))
 
 
 ;;
