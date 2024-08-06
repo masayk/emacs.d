@@ -116,6 +116,18 @@
 
 
 ;;
+;; Programming
+;;
+
+(use-package php-mode
+  :ensure t)
+
+(use-package rust-mode
+  :ensure t
+  :custom rust-format-on-save t)
+
+
+;;
 ;; Other
 ;;
 
