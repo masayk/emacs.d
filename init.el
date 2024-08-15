@@ -25,6 +25,7 @@
 (scroll-bar-mode -1)
 (save-place-mode t)
 
+(global-auto-revert-mode t)
 (global-display-line-numbers-mode t)
 (global-set-key (kbd "C-h") 'backward-delete-char)
 (global-set-key (kbd "C-;") 'undo)
