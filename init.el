@@ -41,6 +41,8 @@
 (setq split-width-threshold 0)
 (setq use-short-answers t)
 
+(setq-default indent-tabs-mode nil)
+
 (put 'upcase-region 'disabled nil) ; C-x C-u -> upcase
 (put 'downcase-region 'disabled nil) ; C-x C-l -> downcase
 
