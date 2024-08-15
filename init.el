@@ -36,6 +36,8 @@
 (setq inhibit-startup-message t)
 (setq initial-scratch-message nil)
 (setq recentf-max-saved-items 999)
+(setq split-height-threshold nil)
+(setq split-width-threshold 0)
 (setq use-short-answers t)
 
 (put 'upcase-region 'disabled nil) ; C-x C-u -> upcase
