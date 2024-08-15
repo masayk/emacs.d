@@ -46,6 +46,25 @@
 (put 'upcase-region 'disabled nil) ; C-x C-u -> upcase
 (put 'downcase-region 'disabled nil) ; C-x C-l -> downcase
 
+;;
+;; Font
+;;
+
+(create-fontset-from-ascii-font
+ "Menlo-12:weight=normal:slant=normal"
+ nil
+ "menlokakugo")
+
+(set-fontset-font
+ "fontset-menlokakugo"
+ 'unicode
+ (font-spec :family "Hiragino Kaku Gothic ProN")
+ nil
+ 'append)
+
+(add-to-list 'default-frame-alist '(font . "fontset-menlokakugo"))
+(setq face-font-rescale-alist '(("Hiragino.*" . 1.2)))
+
 
 ;;
 ;; Dired
