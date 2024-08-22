@@ -124,8 +124,9 @@
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (add-to-list 'auto-mode-alist '("\\.txt$" . org-mode))
 
-;; org-fold
-(load "~/.emacs.d/elisp/org-fold.el")
+;; preserve headline folding state
+(setq org-fold-catch-invisible-edits 'smart)
+(setq org-startup-folded t)
 
 
 ;;
