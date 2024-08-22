@@ -40,6 +40,7 @@
 (setq split-height-threshold nil)
 (setq split-width-threshold 0)
 (setq use-short-answers t)
+(setq vc-handled-backends ())
 
 (setq-default indent-tabs-mode nil)
 
