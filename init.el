@@ -36,6 +36,7 @@
 (setq create-lockfiles nil)
 (setq inhibit-startup-message t)
 (setq initial-scratch-message nil)
+(setq mode-require-final-newline nil)
 (setq recentf-max-saved-items 999)
 (setq split-height-threshold nil)
 (setq split-width-threshold 0)
