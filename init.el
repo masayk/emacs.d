@@ -156,5 +156,16 @@
 ;; Other
 ;;
 
-;; dumb-jump
+(use-package ag
+  :ensure t)
+
+(use-package dumb-jump
+  :ensure t
+  :commands (dumb-jump-xref-activate)
+  :init (progn
+          (setq dumb-jump-selector 'helm)
+          (setq dumb-jump-force-searcher 'ag)
+          (add-hook 'xref-backend-functions #'dumb-jump-xref-activate)))
+
+
 ;; whitespace
