@@ -168,5 +168,12 @@
           (setq dumb-jump-force-searcher 'ag)
           (add-hook 'xref-backend-functions #'dumb-jump-xref-activate)))
 
+(use-package web-mode
+  :ensure t
+  :mode (("\\.ctp\\'" . web-mode))
+  :config
+  (setq
+   web-mode-enable-auto-indentation nil
+   ))
 
 ;; whitespace
