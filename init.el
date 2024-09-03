@@ -147,7 +147,8 @@
 ;;
 
 (use-package php-mode
-  :ensure t)
+  :ensure t
+  :hook (php-mode . (lambda () (abbrev-mode -1))))
 
 (use-package rust-mode
   :ensure t
