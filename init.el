@@ -43,6 +43,7 @@
 (setq use-short-answers t)
 (setq vc-handled-backends ())
 
+(setq-default abbrev-mode nil)
 (setq-default indent-tabs-mode nil)
 
 (put 'upcase-region 'disabled nil) ; C-x C-u -> upcase
