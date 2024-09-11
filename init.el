@@ -196,4 +196,9 @@
    web-mode-enable-auto-indentation nil
    ))
 
+(defun my-after-save-hook ()
+  (when (file-exists-p "~/after_save_hook.sh")
+    (shell-command "sh ~/after_save_hook.sh")))
+(add-hook 'after-save-hook 'my-after-save-hook)
+
 ;; whitespace
