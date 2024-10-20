@@ -126,6 +126,7 @@
 (setq org-use-speed-commands t) ; move n or p
 (setq org-startup-indented t)
 (setq org-startup-folded nil)
+(setq org-startup-truncated nil)
 (setq org-hide-leading-stars t)
 
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
