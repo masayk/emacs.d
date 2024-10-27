@@ -171,7 +171,18 @@
 
 (use-package rust-mode
   :ensure t
+  :hook (rust-mode . lsp)
   :custom rust-format-on-save t)
+
+(use-package lsp-mode
+  :ensure t
+  :commands lsp
+  :config
+  (setq lsp-rust-server 'rust-analyzer))
+
+(use-package lsp-ui
+  :ensure t
+  :commands lsp-ui-mode)
 
 
 ;;
