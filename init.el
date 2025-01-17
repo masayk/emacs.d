@@ -184,6 +184,8 @@
   :ensure t
   :commands lsp-ui-mode)
 
+(use-package yaml-mode
+  :ensure t)
 
 ;;
 ;; Other
